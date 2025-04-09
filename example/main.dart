@@ -1,5 +1,5 @@
-import 'package:local_data_impl_impl/enum/data_type.dart';
-import 'package:local_data_impl_impl/local_data_impl.dart';
+import 'package:local_data_impl/enum/data_type.dart';
+import 'package:local_data_impl/local_data_impl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {

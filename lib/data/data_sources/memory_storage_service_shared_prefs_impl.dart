@@ -1,4 +1,4 @@
-import 'package:local_data_impl_impl/data/data_sources/i_data_sources/i_memory_storage_service.dart';
+import 'package:local_data_impl/data/data_sources/i_data_sources/i_memory_storage_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CacheStorageServiceSharedPrefsImpl extends IMemoryStorageService {

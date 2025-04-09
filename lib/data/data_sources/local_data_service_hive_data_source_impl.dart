@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
-import 'package:local_data_impl_impl/data/data_sources/i_data_sources/i_local_data_service.dart';
+import 'package:local_data_impl/data/data_sources/i_data_sources/i_local_data_service.dart';
 
-import 'package:local_data_impl_impl/enum/data_type.dart';
+import 'package:local_data_impl/enum/data_type.dart';
 
 import 'i_data_sources/i_hive_storage_service.dart';
 
