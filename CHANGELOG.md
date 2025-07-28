@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 
 
+## 0.0.3
+- Implemented Register Local Hive Data Source Service GetIt DI.
+
 ## 0.0.2
 ### Added
 - Implemented **Hive Storage** for local key-value storage.
