@@ -1,4 +1,3 @@
-
 import '../../../enum/data_type.dart';
 
 abstract class ILocalDataService {

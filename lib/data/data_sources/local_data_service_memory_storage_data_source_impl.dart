@@ -2,16 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:local_data_impl/data/data_sources/i_data_sources/i_local_data_service.dart';
-import 'package:local_data_impl/enum/data_type.dart' ;
-
+import 'package:local_data_impl/enum/data_type.dart';
 
 import 'i_data_sources/i_memory_storage_service.dart';
 
 class LocalDataServiceCacheStorageDataSourceImpl extends ILocalDataService {
   final IMemoryStorageService iMemoryStorageService;
 
-  LocalDataServiceCacheStorageDataSourceImpl(
-      {required this.iMemoryStorageService});
+  LocalDataServiceCacheStorageDataSourceImpl({
+    required this.iMemoryStorageService,
+  });
 
   @override
   Future<bool> deleteData({required String key}) async {
@@ -19,7 +19,8 @@ class LocalDataServiceCacheStorageDataSourceImpl extends ILocalDataService {
       return await iMemoryStorageService.remove(key);
     } catch (e) {
       debugPrint(
-          'LocalDataServiceCacheStorageDataSourceImpl | setData | error: $e');
+        'LocalDataServiceCacheStorageDataSourceImpl | setData | error: $e',
+      );
       return false;
     }
   }
@@ -52,7 +53,8 @@ class LocalDataServiceCacheStorageDataSourceImpl extends ILocalDataService {
         String enCodedData = jsonEncode(data).toString();
         // todo! remove debugPrint();
         debugPrint(
-            'LocalDataServiceCacheStorageDataSourceImpl | setData | enCodedData: $enCodedData');
+          'LocalDataServiceCacheStorageDataSourceImpl | setData | enCodedData: $enCodedData',
+        );
         return await iMemoryStorageService.setString(key, enCodedData);
 
         // others type data
@@ -61,14 +63,17 @@ class LocalDataServiceCacheStorageDataSourceImpl extends ILocalDataService {
       }
     } catch (e) {
       debugPrint(
-          'LocalDataServiceCacheStorageDataSourceImpl | setData | error: $e');
+        'LocalDataServiceCacheStorageDataSourceImpl | setData | error: $e',
+      );
       return false;
     }
   }
 
   @override
-  Future getData(
-      {required String key, DataType? dataType = DataType.map}) async {
+  Future getData({
+    required String key,
+    DataType? dataType = DataType.map,
+  }) async {
     try {
       if (dataType == DataType.int) {
         // int type data
@@ -94,7 +99,8 @@ class LocalDataServiceCacheStorageDataSourceImpl extends ILocalDataService {
       }
     } catch (e) {
       debugPrint(
-          'LocalDataServiceCacheStorageDataSourceImpl | getData | error: $e');
+        'LocalDataServiceCacheStorageDataSourceImpl | getData | error: $e',
+      );
       return null;
     }
   }

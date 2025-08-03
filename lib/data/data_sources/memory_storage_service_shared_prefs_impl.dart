@@ -4,11 +4,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 class CacheStorageServiceSharedPrefsImpl extends IMemoryStorageService {
   //   late prefs = Application.preferences;
 
-// Obtain features preferences.
+  // Obtain features preferences.
   final SharedPreferences prefs;
 
   CacheStorageServiceSharedPrefsImpl({required this.prefs});
-// = await SharedPreferences.getInstance();
+  // = await SharedPreferences.getInstance();
 
   @override
   Future<bool> clearMemory() {
@@ -90,12 +90,12 @@ class CacheStorageServiceSharedPrefsImpl extends IMemoryStorageService {
     return prefs.setStringList(key, value);
   }
 
-// ///Singleton repository
-//   final UtilPreferences _instance = UtilPreferences._internal();
-//
-// factory UtilPreferences() {
-//   return _instance;
-// }
-//
-// UtilPreferences._internal();
+  // ///Singleton repository
+  //   final UtilPreferences _instance = UtilPreferences._internal();
+  //
+  // factory UtilPreferences() {
+  //   return _instance;
+  // }
+  //
+  // UtilPreferences._internal();
 }

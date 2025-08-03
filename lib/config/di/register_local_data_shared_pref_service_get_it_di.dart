@@ -16,8 +16,10 @@ void registerLocalDataSharedPrefServiceGetItDi() async {
 
   /// Service
   sl.registerLazySingleton<IMemoryStorageService>(
-      () => CacheStorageServiceSharedPrefsImpl(prefs: sl()));
+    () => CacheStorageServiceSharedPrefsImpl(prefs: sl()),
+  );
 
   sl.registerLazySingleton<ILocalDataService>(
-      () => LocalDataServiceHydratedImpl());
+    () => LocalDataServiceHydratedImpl(),
+  );
 }

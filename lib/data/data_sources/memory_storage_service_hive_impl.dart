@@ -4,20 +4,20 @@ import 'package:shared_preferences/shared_preferences.dart';
 class CacheStorageServiceHiveImpl extends IMemoryStorageService {
   //   late prefs = Application.preferences;
 
-// Obtain features preferences.
+  // Obtain features preferences.
   final SharedPreferences prefs;
 
   CacheStorageServiceHiveImpl({required this.prefs});
-// = await SharedPreferences.getInstance();
+  // = await SharedPreferences.getInstance();
 
   // ///Singleton repository
-//   final UtilPreferences _instance = UtilPreferences._internal();
-//
-// factory UtilPreferences() {
-//   return _instance;
-// }
-//
-// UtilPreferences._internal();
+  //   final UtilPreferences _instance = UtilPreferences._internal();
+  //
+  // factory UtilPreferences() {
+  //   return _instance;
+  // }
+  //
+  // UtilPreferences._internal();
 
   @override
   Future<bool> clearMemory() {
