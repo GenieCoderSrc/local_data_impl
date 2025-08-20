@@ -1,21 +1,21 @@
 name: local_data_impl
 description: "Local Data Impl is a Dart package that provides an easy-to-use abstraction for local data storage. It supports multiple storage backends, including Hive, SharedPreferences, and HydratedBloc, allowing developers to store and manage data efficiently. With support for various data types, including strings, integers, booleans, and maps, Local Data simplifies persistent storage in Flutter applications."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/GenieCoderSrc/local_data_impl
 repository: https://github.com/GenieCoderSrc/local_data_impl
 issue_tracker: https://github.com/GenieCoderSrc/local_data_impl /issues
 
 
 environment:
-  sdk: ^3.8.1
-  flutter: ">=1.17.0"
+  sdk: ^3.9.0
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 
-  get_it_di_global_variable: ^0.0.5
+  get_it_di_global_variable: ^0.0.6
 
   shared_preferences: ^2.5.3
   hive: ^2.2.3
@@ -26,7 +26,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

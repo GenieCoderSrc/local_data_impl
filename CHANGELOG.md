@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 
 
+## 0.0.4
+
+### Aug 22, 2025
+
+### ✨ Updated
+
+- Updated Dart sdk to 3.9.0
+- Removed `flutter_lints` Dependency 
+- Updated `get_it_di_global_variable` to 0.0.6
+
 
 ## 0.0.3
 - Implemented Register Local Hive Data Source Service GetIt DI.
