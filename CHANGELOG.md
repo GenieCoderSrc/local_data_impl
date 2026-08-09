@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.6
+
+### Aug 10, 2026
+
+### ✨ Updated
+
+- Segregated local data source interfaces into `ILocalDataService` for basic key-value storage and `IBoxLocalDataService` for NoSQL box operations, adhering to the Interface Segregation Principle.
+
 ## 0.0.5
 
 ### Jun 20, 2026
