@@ -13,6 +13,8 @@
 Add this to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   local_data_impl: latest_version
 ```
