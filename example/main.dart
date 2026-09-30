@@ -14,8 +14,8 @@ void main() async {
   // Create local data service
   final ILocalDataService localDataService =
       LocalDataServiceCacheStorageDataSourceImpl(
-        iMemoryStorageService: memoryStorageService,
-      );
+    iMemoryStorageService: memoryStorageService,
+  );
 
   // Add Data
   await localDataService.addData(key: 'username', data: 'JohnDoe');
